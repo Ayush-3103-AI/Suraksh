@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <title>Upload File - Suraksh</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 50px auto; padding: 20px; }
+        h2 { color: #333; }
+        form { background: #f5f5f5; padding: 20px; border-radius: 5px; }
+        label { display: block; margin: 10px 0 5px 0; }
+        input[type="file"], select { width: 100%; padding: 8px; margin-bottom: 10px; }
+        button { background: #28a745; color: white; padding: 10px 20px; border: none; border-radius: 3px; cursor: pointer; }
+        button:hover { background: #218838; }
+        .back { margin-top: 20px; }
+        .back a { color: #007bff; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <h2>Upload File (Normal)</h2>
+    <form method="post" enctype="multipart/form-data">
+        <label>Select File:</label>
+        <input type="file" name="file" required/>
+        
+        <label>Clearance Level:</label>
+        <select name="clearance" required>
+            <option value="1">L1 (Lowest)</option>
+            <option value="2">L2 (Medium)</option>
+            <option value="3">L3 (Highest)</option>
+        </select>
+        
+        <button type="submit">Upload</button>
+    </form>
+    
+    <div class="back">
+        <a href="/upload">← Back to Upload Options</a> | 
+        <a href="/dashboard">Dashboard</a>
+    </div>
+</body>
+</html>
+

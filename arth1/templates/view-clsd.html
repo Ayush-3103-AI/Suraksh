@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+    <title>View Secure Document - Suraksh</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 900px; margin: 50px auto; padding: 20px; }
+        h2 { color: #333; }
+        .document-info { background: #f5f5f5; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+        .document-info strong { display: inline-block; margin-right: 10px; }
+        .section { margin: 20px 0; padding: 15px; border-left: 4px solid; border-radius: 3px; background: #fff; }
+        .section.level1 { border-color: #dc3545; }
+        .section.level2 { border-color: #ffc107; }
+        .section.level3 { border-color: #28a745; }
+        .section h3 { margin-top: 0; }
+        .clearance-badge { padding: 3px 8px; border-radius: 3px; color: white; font-size: 12px; display: inline-block; margin-left: 10px; }
+        .L1 { background: #dc3545; }
+        .L2 { background: #ffc107; color: #000; }
+        .L3 { background: #28a745; }
+        .content { white-space: pre-wrap; word-wrap: break-word; margin-top: 10px; line-height: 1.6; }
+        .back { margin-top: 20px; }
+        .back a { color: #007bff; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <h2>Secure Document: {{ document.title }}</h2>
+    
+    <div class="document-info">
+        <strong>Document ID:</strong> <code>{{ document.document_id }}</code><br/>
+        <strong>Your Clearance:</strong> <span class="clearance-badge L{{ user.clearance }}">L{{ user.clearance }}</span>
+    </div>
+    
+    <h3>Document Sections (Based on Your Clearance)</h3>
+    
+    {% for section in document.sections %}
+        <div class="section level{{ section.level }}">
+            <h3>Clearance Level {{ section.level }} Content 
+                <span class="clearance-badge L{{ section.level }}">L{{ section.level }}</span>
+            </h3>
+            <div class="content">{{ section.content }}</div>
+        </div>
+    {% endfor %}
+    
+    <div class="back">
+        <a href="/dashboard">← Back to Dashboard</a>
+    </div>
+</body>
+</html>
+

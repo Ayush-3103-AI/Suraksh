@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <title>Blockchain Viewer - Suraksh</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 20px auto; padding: 20px; }
+        h2 { color: #333; }
+        .nav { margin: 20px 0; }
+        .nav a { margin-right: 15px; padding: 8px 15px; background: #007bff; color: white; text-decoration: none; border-radius: 3px; }
+        .status { padding: 10px; margin: 20px 0; border-radius: 3px; }
+        .valid { background: #d4edda; color: #155724; }
+        .invalid { background: #f8d7da; color: #721c24; }
+        .entry { background: #f5f5f5; padding: 15px; margin: 10px 0; border-radius: 5px; border-left: 4px solid #007bff; }
+        .entry-header { font-weight: bold; color: #007bff; margin-bottom: 10px; }
+        .entry-data { background: white; padding: 10px; border-radius: 3px; margin-top: 5px; }
+        .hash { font-family: monospace; font-size: 12px; color: #666; word-break: break-all; }
+        code { background: #f0f0f0; padding: 2px 5px; border-radius: 2px; }
+    </style>
+</head>
+<body>
+    <h2>Blockchain Ledger Viewer</h2>
+    
+    <div class="nav">
+        <a href="/dashboard">← Back to Dashboard</a>
+    </div>
+    
+    <div class="status {{ 'valid' if is_valid else 'invalid' }}">
+        <strong>Chain Status:</strong> {{ message }}
+    </div>
+    
+    <h3>All Entries ({{ entries|length }} total)</h3>
+    
+    {% for entry in entries %}
+        <div class="entry">
+            <div class="entry-header">
+                #{{ entry.index }} | {{ entry.action }} | {{ entry.timestamp }}
+            </div>
+            <div class="entry-data">
+                <strong>Data:</strong><br>
+                <pre>{% for key, value in entry.data.items() %}{{ key }}: {{ value }}
+{% endfor %}</pre>
+            </div>
+            <div class="hash">
+                <strong>Hash:</strong> <code>{{ entry.hash }}</code><br>
+                <strong>Prev Hash:</strong> <code>{{ entry.prev_hash }}</code>
+            </div>
+        </div>
+    {% endfor %}
+</body>
+</html>
+

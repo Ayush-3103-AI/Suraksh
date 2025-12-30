@@ -26,3 +26,17 @@ logs/
 *.tmp
 *.temp
 
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# Vault storage and runtime data
+vault_storage/
+**/vault_storage/
+blockchain/chain.jsonl
+**/blockchain/chain.jsonl
+logs/
+**/logs/
+

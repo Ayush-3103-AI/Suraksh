@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+    <title>Create Secure Document (CLSD) - Suraksh</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; }
+        h2 { color: #333; }
+        form { background: #f5f5f5; padding: 20px; border-radius: 5px; }
+        label { display: block; margin: 15px 0 5px 0; font-weight: bold; }
+        input[type="text"], textarea { width: 100%; padding: 8px; margin-bottom: 10px; box-sizing: border-box; }
+        textarea { min-height: 100px; resize: vertical; }
+        .section-info { font-size: 12px; color: #666; margin-top: -5px; margin-bottom: 10px; }
+        button { background: #28a745; color: white; padding: 10px 20px; border: none; border-radius: 3px; cursor: pointer; font-size: 16px; }
+        button:hover { background: #218838; }
+        .back { margin-top: 20px; }
+        .back a { color: #007bff; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <h2>Create Clearance-Layered Secure Document (CLSD)</h2>
+    <form method="post">
+        <label>Document Title:</label>
+        <input type="text" name="title" required/>
+        
+        <label>Clearance Level 1 Content:</label>
+        <div class="section-info">Visible to users with Clearance L1 and above</div>
+        <textarea name="level1_content" placeholder="Enter content for Level 1 clearance..."></textarea>
+        
+        <label>Clearance Level 2 Content:</label>
+        <div class="section-info">Visible to users with Clearance L2 and above</div>
+        <textarea name="level2_content" placeholder="Enter content for Level 2 clearance..."></textarea>
+        
+        <label>Clearance Level 3 Content:</label>
+        <div class="section-info">Visible to users with Clearance L3 and above</div>
+        <textarea name="level3_content" placeholder="Enter content for Level 3 clearance..."></textarea>
+        
+        <button type="submit">Create Secure Document</button>
+    </form>
+    
+    <div class="back">
+        <a href="/upload">← Back to Upload Options</a> | 
+        <a href="/dashboard">Dashboard</a>
+    </div>
+</body>
+</html>
+

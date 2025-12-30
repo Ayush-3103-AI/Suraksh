@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <title>Share File - Suraksh</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 50px auto; padding: 20px; }
+        h2 { color: #333; }
+        form { background: #f5f5f5; padding: 20px; border-radius: 5px; }
+        label { display: block; margin: 10px 0 5px 0; }
+        select { width: 100%; padding: 8px; margin-bottom: 10px; }
+        button { background: #17a2b8; color: white; padding: 10px 20px; border: none; border-radius: 3px; cursor: pointer; }
+        button:hover { background: #138496; }
+        .back { margin-top: 20px; }
+        .back a { color: #007bff; text-decoration: none; }
+        .info { background: #e7f3ff; padding: 10px; margin: 10px 0; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <h2>Share File</h2>
+    
+    <div class="info">
+        <strong>File ID:</strong> {{ file_id }}<br>
+        <small>Note: File will be re-encrypted with a new FEK for the recipient.</small>
+    </div>
+    
+    <form method="post">
+        <label>Select Recipient:</label>
+        <select name="to_user" required>
+            {% for uid, name, clearance in users %}
+                <option value="{{ uid }}">{{ uid }} - {{ name }} ({{ clearance }})</option>
+            {% endfor %}
+        </select>
+        
+        <button type="submit">Share File</button>
+    </form>
+    
+    <div class="back">
+        <a href="/dashboard">← Back to Dashboard</a>
+    </div>
+</body>
+</html>
+

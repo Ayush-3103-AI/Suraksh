@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <title>Suraksh Login</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 500px; margin: 50px auto; padding: 20px; }
+        h2 { color: #333; }
+        form { background: #f5f5f5; padding: 20px; border-radius: 5px; }
+        label { display: block; margin: 10px 0 5px 0; }
+        select, input[type="password"] { width: 100%; padding: 8px; margin-bottom: 10px; }
+        button { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 3px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        .flash { background: #ffc107; padding: 10px; margin: 10px 0; border-radius: 3px; }
+        .note { margin-top: 20px; padding: 10px; background: #e7f3ff; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <h2>Suraksh Secure Vault - Login</h2>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <div class="flash">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    
+    <form method="post">
+        <label>User ID:</label>
+        <select name="user_id">
+            {% for uid, name, clearance in users %}
+                <option value="{{ uid }}">{{ uid }} - {{ name }} ({{ clearance }})</option>
+            {% endfor %}
+        </select>
+        
+        <label>Password:</label>
+        <input type="password" name="password" value="root" required/>
+        
+        <button type="submit">Login</button>
+    </form>
+    
+    <div class="note">
+        <strong>Demo Credentials:</strong><br>
+        Password for all users: <b>root</b><br>
+        <small>Clearance levels: L1 (Lowest) → L2 (Medium) → L3 (Highest) → L4 (Superuser)</small>
+    </div>
+</body>
+</html>

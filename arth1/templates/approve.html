@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+    <title>Approve Requests - Suraksh</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1000px; margin: 20px auto; padding: 20px; }
+        h2 { color: #333; }
+        .nav { margin: 20px 0; }
+        .nav a { margin-right: 15px; padding: 8px 15px; background: #007bff; color: white; text-decoration: none; border-radius: 3px; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { padding: 10px; text-align: left; border: 1px solid #ddd; }
+        th { background: #f0f0f0; }
+        .approve-btn { background: #28a745; color: white; padding: 5px 10px; border: none; border-radius: 3px; cursor: pointer; }
+        .deny-btn { background: #dc3545; color: white; padding: 5px 10px; border: none; border-radius: 3px; cursor: pointer; }
+        .no-requests { padding: 20px; background: #f5f5f5; border-radius: 3px; text-align: center; }
+    </style>
+</head>
+<body>
+    <h2>Approve Access Requests (Superuser)</h2>
+    
+    <div class="nav">
+        <a href="/dashboard">← Back to Dashboard</a>
+    </div>
+    
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <div style="background: #d4edda; padding: 10px; margin: 10px 0; border-radius: 3px; color: #155724;">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    
+    {% if requests %}
+        <table>
+            <tr>
+                <th>Request ID</th>
+                <th>User</th>
+                <th>File</th>
+                <th>Reason</th>
+                <th>Timestamp</th>
+                <th>Actions</th>
+            </tr>
+            {% for req in requests %}
+                <tr>
+                    <td><code>{{ req.request_id }}</code></td>
+                    <td>{{ req.user_id }}</td>
+                    <td>
+                        {% if req.file_meta %}
+                            {{ req.file_meta.filename }}<br>
+                            <small>Clearance: L{{ req.file_meta.clearance }}</small>
+                        {% else %}
+                            {{ req.file_id }}
+                        {% endif %}
+                    </td>
+                    <td>{{ req.reason }}</td>
+                    <td>{{ req.timestamp }}</td>
+                    <td>
+                        <form method="post" style="display: inline;">
+                            <input type="hidden" name="request_id" value="{{ req.request_id }}">
+                            <input type="hidden" name="action" value="approve">
+                            <button type="submit" class="approve-btn">Approve</button>
+                        </form>
+                        <form method="post" style="display: inline;">
+                            <input type="hidden" name="request_id" value="{{ req.request_id }}">
+                            <input type="hidden" name="action" value="deny">
+                            <button type="submit" class="deny-btn">Deny</button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <div class="no-requests">
+            <p>No pending requests.</p>
+        </div>
+    {% endif %}
+</body>
+</html>
+
