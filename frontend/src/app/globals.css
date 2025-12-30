@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@100;300;400;500;600;700&family=Roboto+Mono:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@layer base {
+  * {
+    /* Removed border-border as it's not defined in Tailwind config */
+  }
+  
+  body {
+    @apply bg-space text-white;
+    background: linear-gradient(to bottom right, #050505, #0A0A0B, #0F0F10);
+  }
+  
+  html {
+    @apply bg-space;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display uppercase tracking-wider;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+  }
+  
+  code, pre {
+    @apply font-mono;
+    font-family: 'Roboto Mono', 'JetBrains Mono', monospace;
+  }
+  
+  input, textarea, select {
+    @apply bg-glass-medium text-white;
+  }
+  
+  input::placeholder, textarea::placeholder {
+    @apply text-gray-500;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 242, 255, 0.3);
+}
+
+/* Prevent text selection on UI elements */
+button, .no-select {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+@layer utilities {
+  /* Grid overlay pattern */
+  .grid-overlay {
+    background-image: 
+      linear-gradient(rgba(0, 242, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 242, 255, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+    position: relative;
+  }
+  
+  .grid-overlay::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+      radial-gradient(circle at 1px 1px, rgba(0, 242, 255, 0.15) 1px, transparent 0);
+    background-size: 20px 20px;
+    pointer-events: none;
+  }
+  
+  /* Tech border with corner brackets */
+  .tech-border {
+    @apply relative border border-cyber-cyan/30;
+  }
+  
+  .tech-border::before,
+  .tech-border::after {
+    content: '';
+    @apply absolute w-2 h-2 border-cyber-cyan/50;
+  }
+  
+  .tech-border::before {
+    @apply top-0 left-0 border-r-0 border-b-0;
+  }
+  
+  .tech-border::after {
+    @apply bottom-0 right-0 border-l-0 border-t-0;
+  }
+  
+  /* Scrollbar styling */
+  .custom-scrollbar::-webkit-scrollbar {
+    @apply w-2;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-space-100;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-cyber-cyan/30 rounded;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-cyber-cyan/50;
+  }
+}
+

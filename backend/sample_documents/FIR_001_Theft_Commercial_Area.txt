@@ -1,0 +1,71 @@
+FIRST INFORMATION REPORT (FIR)
+================================
+
+Police Station: Central Police Station
+District: Metropolitan City
+State: State Police Department
+FIR Number: FIR-2024-001
+Date: 2024-01-15
+Time: 14:30
+
+INFORMANT DETAILS:
+-----------------
+Name: Rajesh Kumar
+Age: 45
+Occupation: Shop Owner
+Address: 123 Commercial Street, Metropolitan City
+Contact: +91-9876543210
+
+INCIDENT DETAILS:
+----------------
+Type of Offence: Theft (Section 379 IPC)
+Date of Incident: 2024-01-15
+Time of Incident: 02:00 AM
+Place of Incident: Commercial Street Market, Metropolitan City
+
+NARRATIVE:
+---------
+On 15th January 2024, at approximately 2:00 AM, the informant Rajesh Kumar discovered that his electronics shop located at Commercial Street Market had been broken into. The main entrance door was forced open, and valuable items were stolen.
+
+STOLEN ITEMS:
+- 15 Laptop computers (various brands)
+- 25 Mobile phones (Samsung, Apple, OnePlus)
+- Cash amount: Rs. 2,50,000
+- Security camera DVR system
+
+SUSPECTS:
+--------
+Witness statements indicate that three individuals were seen near the shop around 1:30 AM:
+1. Name: Vikram Singh (alias: Vicky)
+   Age: Approximately 28-30 years
+   Description: Tall, dark complexion, visible tattoo on left arm
+   Last Known Address: Slum area near Railway Station
+
+2. Name: Unknown (referred to as "Bhai" by others)
+   Age: Approximately 25-27 years
+   Description: Medium height, fair complexion
+   Vehicle: Red motorcycle (registration partially visible: MH-12-XX-1234)
+
+3. Name: Unknown
+   Age: Approximately 22-24 years
+   Description: Short height, wearing black hoodie
+
+ORGANIZATIONS MENTIONED:
+------------------------
+- Local Electronics Dealers Association
+- Metropolitan City Police Department
+- Commercial Street Market Association
+
+LOCATIONS:
+---------
+- Commercial Street Market, Metropolitan City
+- Railway Station area, Metropolitan City
+- Slum area near Railway Station
+
+INVESTIGATING OFFICER:
+--------------------
+Inspector: Priya Sharma
+Badge Number: PS-4567
+Contact: +91-9876543211
+
+STATUS: Under Investigation

@@ -1,0 +1,52 @@
+# FastAPI Core
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.6
+
+# Pydantic v2 (Strict Validation)
+pydantic==2.5.3
+pydantic-settings==2.1.0
+
+# Database
+sqlalchemy==2.0.25
+asyncpg==0.29.0
+alembic==1.13.1
+
+# Redis
+redis==5.0.1
+hiredis==2.3.2
+
+# Neo4j
+neo4j>=5.16.0,<6.0.0
+
+# Qdrant Vector Store
+qdrant-client>=1.7.1,<2.0.0
+
+# Authentication & Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+cryptography==42.0.2
+
+# HTTP Client
+httpx==0.26.0
+aiohttp==3.9.1
+
+# GraphRAG & LLM (LlamaIndex)
+llama-index==0.10.0
+llama-index-core==0.10.0
+llama-index-graph-stores-neo4j==0.1.0
+llama-index-vector-stores-qdrant==0.1.0
+llama-index-embeddings-openai==0.1.0
+openai==1.10.0
+
+# PDF Processing
+PyPDF2==3.0.1
+pdfplumber==0.10.3
+
+# Object Storage (MinIO)
+minio==7.2.0
+
+# Utilities
+python-dotenv==1.0.0
+pytz==2024.1
+

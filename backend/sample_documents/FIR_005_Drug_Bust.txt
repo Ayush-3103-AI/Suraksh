@@ -1,0 +1,87 @@
+FIRST INFORMATION REPORT (FIR)
+================================
+
+Police Station: Narcotics Control Bureau
+District: Metropolitan City
+State: State Police Department
+FIR Number: FIR-2024-005
+Date: 2024-01-28
+Time: 03:30
+
+INFORMANT DETAILS:
+-----------------
+Name: Inspector Mohan Joshi (NCB)
+Age: 38
+Occupation: Police Officer, Narcotics Control Bureau
+Badge Number: MJ-5678
+Contact: +91-9876543260
+
+INCIDENT DETAILS:
+----------------
+Type of Offence: Narcotics Possession, Drug Trafficking (NDPS Act)
+Date of Incident: 2024-01-28
+Time of Incident: 02:00
+Place of Incident: Warehouse Complex, Industrial Area, Metropolitan City
+
+NARRATIVE:
+---------
+On 28th January 2024, at approximately 2:00 AM, a raid was conducted on a suspected drug storage facility located in the Industrial Area. The operation was based on intelligence gathered over the past two weeks. The raid resulted in the seizure of large quantities of illegal narcotics and the arrest of multiple suspects.
+
+SEIZED ITEMS:
+------------
+- 50 kg of Heroin (packaged in multiple containers)
+- 25 kg of Cocaine
+- 1000 units of MDMA tablets
+- 500 units of LSD sheets
+- Cash: Rs. 25,00,000
+- Drug packaging equipment
+- Multiple mobile phones and SIM cards
+
+ARRESTED SUSPECTS:
+----------------
+1. Name: Ajay Malhotra
+   Age: 35
+   Occupation: Businessman (Front for drug operations)
+   Address: 321 Luxury Apartments, East Zone, Metropolitan City
+   Role: Warehouse Manager, suspected ring leader
+   Previous Criminal Record: Yes (2 cases of assault, 2018)
+
+2. Name: Deepak Choudhary
+   Age: 28
+   Occupation: Unemployed
+   Address: Slum area, Industrial Zone, Metropolitan City
+   Role: Warehouse guard, drug handler
+   Previous Criminal Record: Yes (1 case of theft, 2020)
+
+3. Name: Unknown (Alias: "Bhai")
+   Age: Approximately 30-32 years
+   Description: Tall, heavily built, multiple tattoos
+   Role: Suspected supplier/distributor
+   Status: Escaped during raid
+
+ORGANIZATIONS MENTIONED:
+------------------------
+- Narcotics Control Bureau (NCB)
+- Industrial Area Warehouse Association
+- Suspected Drug Trafficking Network (operating across multiple states)
+
+LOCATIONS:
+---------
+- Warehouse Complex, Industrial Area, Metropolitan City
+- Luxury Apartments, East Zone, Metropolitan City
+- Slum area, Industrial Zone, Metropolitan City
+- Suspected distribution points (under investigation)
+
+VEHICLES SEIZED:
+---------------
+- White van (Registration: MH-12-CD-9012) - used for transportation
+- Black SUV (Registration: MH-12-EF-3456) - suspected to belong to ring leader
+
+INVESTIGATING OFFICER:
+--------------------
+Inspector: Mohan Joshi
+Badge Number: MJ-5678
+Contact: +91-9876543260
+Department: Narcotics Control Bureau
+
+STATUS: Active Investigation - Multi-state coordination in progress

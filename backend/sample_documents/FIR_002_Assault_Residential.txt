@@ -1,0 +1,79 @@
+FIRST INFORMATION REPORT (FIR)
+================================
+
+Police Station: North Zone Police Station
+District: Metropolitan City
+State: State Police Department
+FIR Number: FIR-2024-002
+Date: 2024-01-18
+Time: 09:15
+
+INFORMANT DETAILS:
+-----------------
+Name: Anjali Mehta
+Age: 32
+Occupation: Software Engineer
+Address: Apartment 4B, Green Valley Society, North Zone, Metropolitan City
+Contact: +91-9876543220
+
+INCIDENT DETAILS:
+----------------
+Type of Offence: Assault (Section 323, 325 IPC)
+Date of Incident: 2024-01-17
+Time of Incident: 20:30
+Place of Incident: Green Valley Society, North Zone, Metropolitan City
+
+NARRATIVE:
+---------
+On 17th January 2024, at approximately 8:30 PM, the informant Anjali Mehta was returning home from work when she was assaulted by two unknown individuals near the entrance of Green Valley Society. The assailants attempted to snatch her purse and mobile phone. When she resisted, they physically assaulted her, causing injuries to her face and arms.
+
+INJURIES:
+--------
+- Bruises on left cheek
+- Cuts on right arm
+- Minor head injury
+- Medical treatment provided at City General Hospital
+
+SUSPECTS:
+--------
+1. Name: Unknown
+   Age: Approximately 25-28 years
+   Description: Medium height, muscular build, wearing blue jacket
+   Weapon: Knife (approximately 6 inches)
+
+2. Name: Unknown
+   Age: Approximately 22-25 years
+   Description: Tall, thin build, wearing black mask
+   Vehicle: White sedan (registration: MH-12-AB-5678)
+
+WITNESSES:
+---------
+1. Name: Ramesh Patel
+   Age: 55
+   Occupation: Security Guard, Green Valley Society
+   Statement: "I saw two men running away from the scene around 8:35 PM. They got into a white car parked nearby."
+
+2. Name: Deepak Verma
+   Age: 28
+   Occupation: Resident, Green Valley Society
+   Statement: "I heard screams and came out. I saw a woman on the ground and two men fleeing in a white sedan."
+
+LOCATIONS:
+---------
+- Green Valley Society, North Zone, Metropolitan City
+- City General Hospital, Metropolitan City
+- Nearby parking area where vehicle was spotted
+
+ORGANIZATIONS MENTIONED:
+------------------------
+- Green Valley Society Residents Welfare Association
+- City General Hospital
+- North Zone Police Station
+
+INVESTIGATING OFFICER:
+--------------------
+Inspector: Vikram Singh
+Badge Number: VS-7890
+Contact: +91-9876543221
+
+STATUS: Under Investigation

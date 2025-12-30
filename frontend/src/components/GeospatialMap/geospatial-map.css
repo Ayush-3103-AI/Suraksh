@@ -1,0 +1,169 @@
+/* Leaflet Dark Theme Overrides */
+.geospatial-map-container .leaflet-container {
+  background-color: #0a0a0a;
+  color: #00f2ff;
+}
+
+.geospatial-map-container .leaflet-tile-container img {
+  filter: brightness(0.4) contrast(1.3) saturate(0.8);
+  /* Preserves roads/cities while darkening */
+}
+
+/* Zoom Controls Styling */
+.geospatial-map-container .leaflet-control-zoom {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.geospatial-map-container .leaflet-control-zoom a {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(0, 242, 255, 0.3);
+  color: #00f2ff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.geospatial-map-container .leaflet-control-zoom a:hover {
+  background-color: rgba(0, 242, 255, 0.2);
+  border-color: #00f2ff;
+  color: #ffffff;
+}
+
+.geospatial-map-container .leaflet-control-zoom a:active {
+  background-color: rgba(0, 242, 255, 0.3);
+}
+
+.geospatial-map-container .leaflet-control-zoom-in {
+  border-bottom: 1px solid rgba(0, 242, 255, 0.2);
+}
+
+/* Custom Tooltip Styling */
+.geospatial-map-container .custom-tooltip {
+  background-color: rgba(10, 10, 10, 0.95);
+  border: 1px solid #00f2ff;
+  border-radius: 4px;
+  color: #00f2ff;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+.geospatial-map-container .custom-tooltip::before {
+  border-top-color: #00f2ff;
+}
+
+/* Threat Tooltip */
+.geospatial-map-container .threat-tooltip {
+  background-color: rgba(10, 10, 10, 0.95);
+  border: 1px solid #ff0055;
+  border-radius: 4px;
+  color: #ff0055;
+  padding: 6px 12px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 0 15px rgba(255, 0, 85, 0.4);
+  backdrop-filter: blur(8px);
+}
+
+.geospatial-map-container .threat-tooltip::before {
+  border-top-color: #ff0055;
+}
+
+/* Threat Marker Animation */
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.2);
+  }
+}
+
+.geospatial-map-container .threat-marker {
+  background: transparent;
+  border: none;
+}
+
+/* Attribution Control */
+.geospatial-map-container .leaflet-control-attribution {
+  background-color: rgba(10, 10, 10, 0.8);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 10px;
+  padding: 4px 8px;
+  border-top: 1px solid rgba(0, 242, 255, 0.2);
+}
+
+.geospatial-map-container .leaflet-control-attribution a {
+  color: #00f2ff;
+}
+
+/* Popup Styling */
+.geospatial-map-container .leaflet-popup-content-wrapper {
+  background-color: rgba(10, 10, 10, 0.95);
+  border: 1px solid #00f2ff;
+  border-radius: 8px;
+  color: #00f2ff;
+  box-shadow: 0 0 20px rgba(0, 242, 255, 0.3);
+}
+
+.geospatial-map-container .leaflet-popup-tip {
+  background: rgba(10, 10, 10, 0.95);
+  border: 1px solid #00f2ff;
+}
+
+.geospatial-map-container .leaflet-popup-close-button {
+  color: #00f2ff;
+}
+
+.geospatial-map-container .leaflet-popup-close-button:hover {
+  color: #ffffff;
+}
+
+/* Ensure map tiles load properly */
+.geospatial-map-container .leaflet-tile-pane {
+  z-index: 1;
+}
+
+.geospatial-map-container .leaflet-overlay-pane {
+  z-index: 2;
+}
+
+/* Heatmap layer styling */
+.geospatial-map-container .leaflet-heatmap-layer {
+  z-index: 3;
+}
+
+.geospatial-map-container .leaflet-shadow-pane {
+  z-index: 3;
+}
+
+.geospatial-map-container .leaflet-marker-pane {
+  z-index: 4;
+}
+
+.geospatial-map-container .leaflet-tooltip-pane {
+  z-index: 5;
+}
+
+.geospatial-map-container .leaflet-popup-pane {
+  z-index: 6;
+}
+
+.geospatial-map-container .leaflet-control {
+  z-index: 7;
+}
+

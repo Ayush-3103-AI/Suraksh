@@ -1,0 +1,72 @@
+FIRST INFORMATION REPORT (FIR)
+================================
+
+Police Station: Economic Offences Wing
+District: Metropolitan City
+State: State Police Department
+FIR Number: FIR-2024-003
+Date: 2024-01-22
+Time: 11:00
+
+INFORMANT DETAILS:
+-----------------
+Name: Dr. Sanjay Agarwal
+Age: 52
+Occupation: Doctor
+Address: 456 Medical Complex, Central District, Metropolitan City
+Contact: +91-9876543230
+
+INCIDENT DETAILS:
+----------------
+Type of Offence: Fraud, Cheating (Section 420, 406 IPC)
+Date of Incident: 2024-01-10 to 2024-01-20
+Place of Incident: Metropolitan City (Multiple locations)
+
+NARRATIVE:
+---------
+Between 10th January 2024 and 20th January 2024, the informant Dr. Sanjay Agarwal was defrauded by an organization claiming to be a legitimate investment company. The organization "Metro Investment Solutions" promised high returns on medical equipment investment schemes. The informant invested Rs. 15,00,000 over multiple transactions.
+
+The organization's representatives:
+1. Name: Ravi Khanna
+   Designation: Investment Manager
+   Contact: +91-9876543299
+   Office Address: Suite 501, Business Tower, Central Business District
+
+2. Name: Meera Desai
+   Designation: Senior Financial Advisor
+   Contact: +91-9876543298
+   Office Address: Suite 501, Business Tower, Central Business District
+
+ORGANIZATION DETAILS:
+--------------------
+Name: Metro Investment Solutions
+Type: Financial Services Company (Suspected Fraudulent)
+Registered Address: Suite 501, Business Tower, Central Business District, Metropolitan City
+Website: www.metroinvestments.in (currently inaccessible)
+
+FINANCIAL TRANSACTIONS:
+---------------------
+- 2024-01-10: Rs. 5,00,000 (Bank Transfer to Account: 1234567890123456, IFSC: BANK0001234)
+- 2024-01-15: Rs. 7,00,000 (Bank Transfer to same account)
+- 2024-01-20: Rs. 3,00,000 (Cash payment at office)
+
+LOCATIONS:
+---------
+- Business Tower, Central Business District, Metropolitan City
+- Central District, Metropolitan City
+- Medical Complex, Central District, Metropolitan City
+
+RELATED ENTITIES:
+----------------
+- Bank: National Commercial Bank (Account holder: Metro Investment Solutions)
+- Business Tower Management
+- Other victims (estimated 20+ individuals based on office visitor log)
+
+INVESTIGATING OFFICER:
+--------------------
+Inspector: Anjali Deshmukh
+Badge Number: AD-2345
+Contact: +91-9876543231
+Department: Economic Offences Wing
+
+STATUS: Under Investigation - Multi-agency coordination required
